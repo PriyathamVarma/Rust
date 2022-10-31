@@ -195,6 +195,75 @@ fn second(){
 }
 ```
 
+* Functions -2 
+
+```
+// Functions
+
+fn main(){
+
+    let x = mult(2.0,3.0);
+
+    println!("{}",x);
+    
+}
+
+fn mult(qty: f64, oz: f64)-> f64 {
+
+    return qty * oz;
+
+
+}
+
+// result is 6
+```
+
+### Module system
+
+* Create a file called lib.rs
+
+WRONG WAY
+
+```
+//lib.rs
+// for library
+
+fn greet(){
+    println!("Hello world");
+}
+
+```
+//main.rs
+
+fn main(){
+
+    // Calling the fucntion from library
+    hello::greet();
+
+}
+```
+
+RIGHt WAY
+
+```
+//lib.rs
+// for library
+
+pub fn greet(){
+    println!("Hello world");
+}
+
+```
+//main.rs
+
+fn main(){
+
+    // Calling the fucntion from library
+    hello::greet();
+
+}
+```
+
 ## Useful Links
 
 
