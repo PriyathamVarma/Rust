@@ -75,6 +75,86 @@ fn main() {
 
 ```
 
+* For mutable data
+wrong code
+```
+fn main() {
+
+    // Mutable variables
+    let interest = "myself";
+    interest = "change";
+    println!("{}",interest);
+}
+```
+Right code
+```
+fn main() {
+
+    // Mutable variables
+    let mut interest = "myself";
+    interest = "change";
+    println!("{}",interest);
+}
+```
+
+
+* Constant variables
+
+```
+// Use cargo run to run the file
+
+// Function main which prints some text
+fn main() {
+
+    // Constants
+    // const UPPER_CASE : <data-type> = some constant
+    const ROLL_NO : i32 = 56;
+    println!("{}",ROLL_NO);
+}
+
+```
+
+* Scope
+
+```
+fn main() {
+    
+    // Scope
+
+    let x = 10;
+    {
+        let y = 5;
+        println!("X:{},Y:{}",x,y);// No error
+    }
+
+    println!("X:{},Y:{}",x,y);// error because Y is block scope
+
+}
+```
+
+* Scope for same variable
+
+```
+// Use cargo run to run the file
+
+// Function main which prints some text
+fn main() {
+    
+    // Scope for same variable
+
+    let x = 10;
+    {
+        let x = 5;
+        println!("X:{}",x);// x is 5
+    }
+
+    println!("X:{}",x);// x is 10
+
+}
+
+
+```
+
 ## Useful Links
 
 
