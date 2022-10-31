@@ -7,5 +7,10 @@ fn main() {
 
     let many: (i32,i32) = (100,20);
     println!("{}",many.0);
+
+    // Mutable variables
+    let interest = "myself";
+    interest = "change";
+    println!("{}",interest);
 }
 
