@@ -155,6 +155,46 @@ fn main() {
 
 ```
 
+* Mutability
+```
+// Use cargo run to run the file
+
+// Function main which prints some text
+fn main() {
+    
+    // Scope for same variable
+
+    let mut x = 10;// x is mutable
+
+    let x = x;// x is not mutable
+    
+
+    println!("X:{}",x);// x is 10
+
+}
+
+```
+
+
+### Functions
+
+* A function can call another function
+* The second function can be after the first function, but still works
+
+```
+// Calling function
+fn main() {
+    
+    second();// this will still work
+
+}
+
+// Called function
+fn second(){
+    println!("Second Function");
+}
+```
+
 ## Useful Links
 
 
