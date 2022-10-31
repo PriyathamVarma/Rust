@@ -3,15 +3,11 @@
 // Function main which prints some text
 fn main() {
     
-    // Scope for same variable
+    second();// this will still work
 
-    let x = 10;
-    {
-        let x = 5;
-        println!("X:{}",x);// x is 5
-    }
+}
 
-    println!("X:{}",x);// x is 10
-
+fn second(){
+    println!("Second Function");
 }
 
