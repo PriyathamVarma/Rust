@@ -2,15 +2,16 @@
 
 // Function main which prints some text
 fn main() {
-    let (names,titles): (i32,i32) = (10,20);
-    println!("{}",names);
+    
+    // Scope for same variable
 
-    let many: (i32,i32) = (100,20);
-    println!("{}",many.0);
+    let x = 10;
+    {
+        let x = 5;
+        println!("X:{}",x);// x is 5
+    }
 
-    // Mutable variables
-    let interest = "myself";
-    interest = "change";
-    println!("{}",interest);
+    println!("X:{}",x);// x is 10
+
 }
 
