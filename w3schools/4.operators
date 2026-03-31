@@ -1,0 +1,146 @@
+# 🦀 Rust Operators
+
+## 1. 📌 What are Operators?
+
+Operators are symbols used to **perform operations on values and variables**.
+
+### Main Types of Operators in Rust:
+- ➕ Arithmetic Operators  
+- 📝 Assignment Operators  
+- ⚖️ Comparison Operators  
+- 🔗 Logical Operators  
+
+---
+
+## 2. ➕ Arithmetic Operators
+
+Used for **basic mathematical operations**.
+
+| Operator | Name                  | Example   | Result |
+|----------|-----------------------|----------|--------|
+| +        | Addition              | 5 + 3    | 8      |
+| -        | Subtraction           | 5 - 3    | 2      |
+| *        | Multiplication        | 5 * 3    | 15     |
+| /        | Division              | 10 / 2   | 5      |
+| %        | Modulus (Remainder)   | 10 % 3   | 1      |
+
+### Example:
+
+```rust
+fn main() {
+    let add = 5 + 3;
+    let sub = 10 - 4;
+    let mul = 6 * 2;
+    let div = 12 / 3;
+    let rem = 10 % 3;
+
+    println!("Add: {}", add);
+    println!("Sub: {}", sub);
+    println!("Mul: {}", mul);
+    println!("Div: {}", div);
+    println!("Rem: {}", rem);
+}
+````
+
+---
+
+## 3. 📝 Assignment Operators
+
+Used to **assign and update values**.
+
+| Operator | Example | Same As      |
+| -------- | ------- | ------------ |
+| =        | x = 5   | Assign value |
+| +=       | x += 3  | x = x + 3    |
+| -=       | x -= 2  | x = x - 2    |
+| *=       | x *= 4  | x = x * 4    |
+| /=       | x /= 2  | x = x / 2    |
+| %=       | x %= 2  | x = x % 2    |
+
+### Example:
+
+```rust
+fn main() {
+    let mut x = 10;
+    println!("Start: {}", x);
+
+    x += 5;
+    println!("After += 5: {}", x);
+
+    x -= 2;
+    println!("After -= 2: {}", x);
+
+    x *= 2;
+    println!("After *= 2: {}", x);
+
+    x /= 3;
+    println!("After /= 3: {}", x);
+
+    x %= 4;
+    println!("After %= 4: {}", x);
+}
+```
+
+---
+
+## 4. ⚖️ Comparison Operators
+
+Used to **compare two values**.
+They always return a **boolean (true/false)**.
+
+| Operator | Meaning                  | Example       |
+| -------- | ------------------------ | ------------- |
+| ==       | Equal to                 | 5 == 5 → true |
+| !=       | Not equal to             | 5 != 3 → true |
+| >        | Greater than             | 7 > 3 → true  |
+| <        | Less than                | 2 < 5 → true  |
+| >=       | Greater than or equal to | 5 >= 5 → true |
+| <=       | Less than or equal to    | 3 <= 4 → true |
+
+### Example:
+
+```rust
+fn main() {
+    let a = 5;
+    let b = 10;
+
+    println!("5 == 10: {}", a == b);
+    println!("5 != 10: {}", a != b);
+    println!("5 < 10: {}", a < b);
+    println!("5 >= 10: {}", a >= b);
+}
+```
+
+---
+
+## 5. 🔗 Logical Operators
+
+Used to work with **boolean values (true/false)**.
+
+| Operator | Name | Description                      |    |                              |
+| -------- | ---- | -------------------------------- | -- | ---------------------------- |
+| &&       | AND  | true if both conditions are true |    |                              |
+|          |      |                                  | OR | true if at least one is true |
+| !        | NOT  | reverses the boolean value       |    |                              |
+
+### Example:
+
+```rust
+fn main() {
+    let logged_in = true;
+    let is_admin = false;
+
+    println!("Is regular user: {}", logged_in && !is_admin);
+    println!("Has any access: {}", logged_in || is_admin);
+    println!("Not logged in: {}", !logged_in);
+}
+```
+
+---
+
+## 🧠 Quick Revision
+
+* Arithmetic → calculations ➕
+* Assignment → updating values 📝
+* Comparison → gives true/false ⚖️
+* Logical → works with conditions 🔗
