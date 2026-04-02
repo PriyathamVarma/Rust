@@ -2,10 +2,12 @@
 
 // Function main which prints some text
 fn main() {
-    let (names,titles): (i32,i32) = (10,20);
-    println!("{}",names);
+    
+    second();// this will still work
 
-    let many: (i32,i32) = (100,20);
-    println!("{}",many.0);
+}
+
+fn second(){
+    println!("Second Function");
 }
 
